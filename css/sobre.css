@@ -1,0 +1,581 @@
+@keyframes navbar{
+    from{width: 0%;}
+    to{width: 100%;}
+}
+
+@keyframes btnmenu{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes bodyfade{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes logoeffect{
+    from{opacity: 0.5;}
+    to{opacity: 1;}
+}
+
+@keyframes btneffect{
+    from{}
+    to{
+    background: #fff;
+    color: rgb(102, 204, 255);}
+}
+
+@keyframes btneffectModal{
+    from{}
+    to{
+    background: #fff;
+    color: #0e83cd}
+}
+
+body {
+    height: 100%;
+    animation-name: bodyfade;
+    animation-direction: forwards;
+    animation-delay: 0s;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+
+}
+
+/*Botão de sugestão*/
+.nav-sugestao .sugestao .contato .nav{
+    background-color:transparent;
+    border-color:transparent;
+}
+.sugestao{
+    font-size: 32px; 
+    margin-right: 2.5%;
+    color: #fff;
+    transition: .4s;
+}
+
+.sugestao:hover{
+    color: red;
+    text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+    transition: .4s;
+}
+
+/*fonte do Jumbotron*/
+
+.jumbo{
+    font-family: 'Slabo 27px', serif;
+    font-size: 55px;
+}
+
+.descricao2{
+        font-size: 24px;
+    }
+
+/*borda do site*/
+
+.body-border {
+    border-width: 3px;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 100%, 0 0, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(bottom, black, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(bottom, black, rgba(0, 0, 0, 0)) 1 100%;  
+    -o-border-image:
+      -o-linear-gradient(bottom, black, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to top, rgba(0, 0, 0, 0), black, rgba(0, 0, 0, 0)) 1 100%;
+    box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(255, 255, 255, 0.8);
+    background: white;
+    text-align: center;
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+#background {
+    background: rgba(255,255,255,0.1);
+    margin-left: 3%;
+    margin-right: 3%;
+    animation-name: bodyfade;
+    animation-direction: forwards;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+/*Video Background*/
+
+.header1 {
+  position: fixed;
+  background-attachment: fixed;
+  width: cover;
+  height: cover;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.header1 video {
+  position: fixed;
+  height: cover;
+  width: cover;
+}
+
+.descricao{
+    font-size: 68px;
+}
+
+.descricao2{
+    font-size: 32px;
+}
+
+/*Imagem de Logo*/
+
+#evangelion-logo{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+
+/*Imagem de logo*/
+
+#evangelion-logo:hover{
+    opacity: 1;
+}
+
+#MenuMobile{
+    height: 6em;
+}
+
+/* Botões Navbar*/
+
+/*Botão 1*/
+.botao {
+  position: relative;
+  height: cover;
+  width: cover;
+}
+
+.div-botao-descricao {
+  position: absolute;
+  top: 65%;
+  left: -10%;
+  visibility: hidden;
+  opacity: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.botao:hover .div-botao-descricao {
+  visibility: visible;
+  opacity: 1;
+}
+
+.botao-descricao{
+  transition: .2s;
+  transform: translateY(2em);
+}
+
+.botao:hover .botao-descricao {
+  transform: translateY(1em);
+}
+
+.botao:hover .txt-descricao {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.txt-descricao{
+    text-transform: uppercase;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    margin-top: 30%;
+    text-shadow: 2px 2px 2px black;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(2em);
+}
+
+.botao:hover .botao-img{
+    opacity: 1;
+}
+
+.botao-img{
+    opacity: 0.5;
+    position: relative;
+}
+
+/*Botão 2*/
+
+.div-botao-descricao2 {
+  position: absolute;
+  top: 73%;
+  left: -50%;
+  visibility: hidden;
+  opacity: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.botao:hover .div-botao-descricao2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.botao-descricao2{
+  transition: .2s;
+  transform: translateY(2em);
+}
+
+.botao:hover .botao-descricao2 {
+  transform: translateY(1em);
+}
+
+.botao:hover .txt-descricao2 {
+  transform: translateY(0.5em);
+  visibility: visible;
+  opacity: 1;
+}
+
+.txt-descricao2{
+    text-transform: uppercase;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px black;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(2em);
+}
+
+.botao:hover .botao-img2{
+    opacity: 1;
+}
+
+.botao-img2{
+    opacity: 0.5;
+    position: relative;
+}
+
+/*Botão 3*/
+
+.div-botao-descricao3 {
+  position: absolute;
+  top: 72%;
+  left: -5%;
+  visibility: hidden;
+  opacity: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.botao:hover .div-botao-descricao3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.botao-descricao3{
+  transition: .2s;
+  transform: translateY(2em);
+}
+
+.botao:hover .botao-descricao3 {
+  transform: translateY(1em);
+}
+
+.botao:hover .txt-descricao3 {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.txt-descricao3{
+    text-transform: uppercase;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    margin-top: 25%;
+    text-shadow: 2px 2px 2px black;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.botao:hover .botao-img3{
+    opacity: 1;
+}
+
+.botao-img3{
+    opacity: 0.5;
+    position: relative;
+}
+
+
+/*Outros Botões*/
+
+.btnInfo {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    height: 23px;
+    width: 23px;
+    border-radius: 60px;
+    outline: none;
+    position: relative;
+    background-color: rgba(0,0,0,0.2);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btnInfo:hover {
+    background-color: rgba(102, 181, 255, 1);
+}
+
+.btnAcc {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    text-transform: uppercase;
+    color: #66a3ff;
+    font-weight: 550;
+    background-color: rgba(0,0,0,0);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btnAcc:hover {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    border-radius: 5px;
+    background-color: #66a3ff;
+    color: white;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.contato{
+    margin: 10px;
+}
+
+.link{
+    margin: 10px;
+    font-size: 36px;
+    color: black;
+}
+
+.link:hover{
+    color: red;
+}
+
+/*Accordion*/
+
+#accordionExample{
+    opacity: 0.8;
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    width: 80%;
+    margin-left: 10%;
+    text-shadow: 1px 1px 0 rgba(0,0,255,0.2);
+}
+
+
+@media screen and (height: 568px) {
+    .nav-sugestao{
+        margin-top: -10%;
+    }
+
+    .navbar-collapse{
+        margin-left: 10%;
+    }
+
+    .header2 video {
+        top: 50%;
+        height: 150%;
+        width: 150%;
+    }
+
+    .botao-img{
+  width: 4.5rem;
+  height: 4.5rem; 
+  }
+
+  .botao-img2{
+  width: 4.5rem;
+  height: 4.5rem;
+  }
+
+  .botao-img3{
+  width: 4.5rem;
+  height: 4.5rem;
+  }
+
+    #accordionExample{
+        margin: 0;
+        width: 100%;
+    }
+
+    .descricao{
+        font-size: 40px;
+    }
+
+    .descricao2{
+        font-size: 24px;
+    }
+
+    .sugestao{
+        margin: 0;
+    }
+
+    .btn {
+    padding: 5px 25px;
+    margin: 5px 10px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    background-color: rgba(0,0,0,0.5);
+    }
+
+    .btn-1 {
+    border: 0px solid black;
+    width: 100%;
+    color: white;
+    }
+
+    .btnAcc {
+    font-weight: 400;
+    }
+
+    #background{
+        margin-top: 50px;
+    }
+
+    .header1 {
+        height: 1000px;
+        width: auto;
+    }
+
+    .header1 video{
+        margin-top: -5%;
+        height: 800px;
+        width: 1150px;
+    }
+}
+
+@media screen and (height: 667px) {
+    .nav-sugestao{
+        margin-top: -10%;
+    }
+
+    .navbar-collapse{
+        margin-left: 10%;
+    }
+
+    .header2{
+        font-size: 24px;
+    }
+
+    .header2 video {
+        top: 50%;
+        height: 150%;
+        width: 150%;
+    }
+
+    .botao-img{
+  width: 4.5rem;
+  height: 4.5rem; 
+  }
+
+  .botao-img2{
+  width: 4.5rem;
+  height: 4.5rem;
+  }
+
+  .botao-img3{
+  width: 4.5rem;
+  height: 4.5rem;
+  }
+
+    #accordionExample{
+        margin: 0;
+        width: 100%;
+    }
+
+    .descricao{
+        font-size: 40px;
+    }
+
+    .descricao2{
+        font-size: 24px;
+    }
+
+    .sugestao{
+        margin: 0;
+    }
+
+    .btn {
+    padding: 5px 25px;
+    margin: 5px 10px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    background-color: rgba(0,0,0,0.5);
+    }
+
+    .btn-1 {
+    border: 0px solid black;
+    width: 100%;
+    color: white;
+    }
+
+    .btnAcc {
+    font-weight: 400;
+    }
+
+    #background{
+        margin-top: 50px;
+    }
+
+    .header1 {
+        height: 1000px;
+        width: auto;
+    }
+
+    .header1 video{
+        margin-top: -5%;
+        height: 800px;
+        width: 1150px;
+    }
+}
