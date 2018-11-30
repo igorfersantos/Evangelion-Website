@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Sobre</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/sobre.css">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css?family=Mali|Playfair+Display|Slabo+27px" rel="stylesheet">
+  <script>
+  $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+  })
+  </script>
+
+</head>
+<body>
+
+<!-- header de background da página -->
+
+<header class="header1">
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="vid/background3.mp4" type="video/mp4">
+  </video>
+</header>
+<!-- Barra de navegação -->
+
+<!-- sticky bar de segestão com modal -->
+<nav class="navbar nav-sugestao justify-content-end sticky-top bg-transparent">
+  <div class="contato">
+      <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+           <div class="contato">
+          <button type="button" class="sugestao fas fa-exclamation" data-toggle="modal" data-target="#ModalSug" data-whatever="Igor" style="background: none; border: none"></button>
+         </div> 
+      </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="modal fade" id="ModalSug" tabindex="-1" role="dialog" aria-labelledby="ModalSugLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalSugLabel">Você tem alguma sugestão? Deixe-me saber! :)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Mensagem:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Enviar Mensagem</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="fixed d-flex justify-content-center">
+  <a class=".d-sm-none .d-md-block" href="index.html">
+      <img src="img/evangelion-logo.png" id="evangelion-logo">
+  </a>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark" id="MenuPrincipal">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuMobile" aria-controls="MenuMobile" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse .d-sm-none justify-content-center" id="MenuMobile" style="margin-bottom: 3%;">
+    <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">
+        <div class="botao">
+        <img class="botao-img" src="img/btn1_s.png" />
+            <div class="div-botao-descricao">
+              <p class="botao-descricao"><i class="fas fa-home" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;"></i></p><font class="txt-descricao">home</font>
+            </div>
+      </div>
+    </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="personagens.html">
+        <div class="botao">
+        <img class="botao-img2" src="img/btn2_s.png" />
+            <div class="div-botao-descricao2">
+              <p class="botao-descricao2"><i class="fas fa-id-card" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;"></i></p><font class="txt-descricao2">personagens</font>
+            </div>
+      </div>
+    </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="sobre.html">
+        <div class="botao">
+        <img class="botao-img3" src="img/btn3_s.png" />
+            <div class="div-botao-descricao3">
+              <p class="botao-descricao3"><i class="fas fa-question" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;"></i></p><font class="txt-descricao2">sobre</font>
+            </div>
+      </div>
+    </a>
+    </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="background" class="body-border">
+  <div class="jumbotron jumbotron-fluid jumbo" style="opacity: 0.8;">
+    <div class="container">
+      <h1 class="display-4">Obrigado pela visita!</h1>
+      <p class="lead">Abaixo você pode encontrar mais projetos meus!</p>
+      <p class="contato">
+        <a href="https://github.com/TheSnKGaming" target="_blank" class="link">
+          <i class="fab fa-github"></i>
+        </a>
+      </p>
+      <p class="lead">Contato</p>
+        <a href="https://www.linkedin.com/in/igorferlimeira/" target="_blank" class="link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+  </div>
+
+<!-- Fim da página -->  
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/css/tether.min.css" />
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Personagens</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="css/personagens.css">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+</head>
+<body>
+<!-- header de background da página -->
+
+<header class="header1 mr-auto">
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="vid/background2.mp4" type="video/mp4">
+  </video>
+</header>
+<!-- Barra de navegação -->
+
+<!-- sticky bar de segestão com modal -->
+<nav class="navbar nav-sugestao justify-content-end sticky-top bg-transparent">
+  <div class="contato">
+      <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+           <div class="contato">
+          <button type="button" class="sugestao fas fa-exclamation" data-toggle="modal" data-target="#ModalSug" data-whatever="Igor" style="background: none; border: none"></button>
+         </div> 
+      </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="modal fade" id="ModalSug" tabindex="-1" role="dialog" aria-labelledby="ModalSugLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalSugLabel">Você tem alguma sugestão? Deixe-me saber! :)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Mensagem:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Enviar Mensagem</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="fixed d-flex justify-content-center">
+  <a class=".d-sm-none .d-md-block" href="index.html">
+      <img src="img/evangelion-logo.png" id="evangelion-logo">
+  </a>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark" id="MenuPrincipal">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuMobile" aria-controls="MenuMobile" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse .d-sm-none justify-content-center" id="MenuMobile" style="margin-bottom: 3%;">
+    <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">
+        <div class="botao">
+        <img class="botao-img" src="img/btn1_p.png" />
+            <div class="div-botao-descricao">
+              <p class="botao-descricao"><i class="fas fa-home" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;"></i></p><font class="txt-descricao">home</font>
+            </div>
+      </div>
+    </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="personagens.html">
+        <div class="botao">
+        <img class="botao-img2" src="img/btn2_p.png" />
+            <div class="div-botao-descricao2">
+              <p class="botao-descricao2"><i class="fas fa-id-card" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;"></i></p><font class="txt-descricao2">personagens</font>
+            </div>
+      </div>
+    </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="sobre.html">
+        <div class="botao">
+        <img class="botao-img3" src="img/btn3_p.png" />
+            <div class="div-botao-descricao3">
+              <p class="botao-descricao3"><i class="fas fa-question" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;"></i></p><font class="txt-descricao2">sobre</font>
+            </div>
+      </div>
+    </a>
+    </li>
+    </ul>
+  </div>
+</nav>
+
+  <div id="background" class="body-border"> <!-- background com fundo preto -->
+    <!-- Jumbotron -->
+    <div class="jumbotron" style="opacity: 0.8;" id="jumbo"><!-- Video dentro do Jumbotron -->
+      <header class="header2 rounded">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop>
+          <source src="vid/jumbo2.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+          <div class="d-flex text-center h-100">
+            <div class="my-auto w-100 overlay-desc">
+              <font class="descricao" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000; color: rgb(242, 242, 242);">
+                Personagens
+              </font><br>
+            </div>
+          </div>
+        </div>
+        <div class="container h-100">
+          <div class="d-flex text-center h-100">
+            <div class="my-auto w-100 text-white overlay-desc2">
+              <a href="https://www.youtube.com/watch?v=hy0awcLBWuc" target="_blank" style="color: red;"><i class="fab fa-youtube descricao2"></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- Cards -->
+    <div class="d-flex justify-content-center" style="font-family: 'Slabo 27px', serif;">
+      <div class="row d-flex justify-content-right">
+      <div class="col-md-4 col-12">
+        <div class="card" style="width: 18rem;background-color: rgba(255, 191, 128,0.9);margin-top: 20px;margin-bottom: 20px;">
+          <img class="card-img-top rounded-circle" src="img/personagens/asuka.png" alt="Ayanami Rei" style="height: 15rem; width: 15rem; margin-left: 10%;">
+          <div class="card-body">
+            <ul class="nav nav-pills nav-fill mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active btn btnA" id="asuka-descricao" data-toggle="tab" href="#asuka-btn" aria-controls="asuka-btn" role="tab" aria-selected="true">História</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btnA" id="asuka-descricao2" data-toggle="tab" href="#asuka-btn2" aria-controls="asuka-btn2" role="tab" aria-selected="false">Info</a>
+              </li>
+            </ul>
+            <hr class="my-4">
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="asuka-btn" role="tabpanel" aria-labelledby="asuka-descricao">
+                <p class="card-text">Asuka Langley Soryu <i>(惣流・アスカ・ラングレー)</i></p>
+                 <p class="card-text">Filha de mãe nipo-alemã e pai americano, a língua nativa de Asuka é o alemão devido ter ela ter nascida e criada na Alemanha. Em ambas as séries de mangá e anime ela tende a xingar aos outros em alemão. Ela é uma criança prodígio e ganhou um diploma universitário em um campo não direcionado para adolescentes, ela também fala inglês e japonês fluentemente, mas tem dificuldade para ler e escrever em japonês. Asuka teve anos de treinamento desde muito nova para se tornar piloto de Evangelion.
+                 </p>
+              </div>
+              <div class="tab-pane fade" id="asuka-btn2" role="tabpanel" aria-labelledby="asuka-descricao2">
+                <i>
+                <p><font style="color: black; font-size: 16px;">Idade: 14</font></p>
+                <p><font style="color: black; font-size: 16px;">Data de Nascimento:  4 de Dezembro de 2001</font></p>
+                <p><font style="color: black; font-size: 16px;">Rank / Título: Segunda criança</font></p>
+                <p><font style="color: black; font-size: 16px;">EVA: Unidade 02
+                    <a href="img/personagens/asuka_eva.png" data-toggle="lightbox">
+                        <i class="fas fa-image btnImg classA"></i>
+                    </a>
+                   </font>
+                </p>
+                <p><font style="color: black; font-size: 16px;">Voz original: Yuko Miyamura <img src="img/flags/japan.png" width="22" height="15" class="thumbborder"><a href="img/personagens/asuka_d_or.png" data-toggle="lightbox">
+                        <i class="fas fa-image btnImg classA"></i>
+                    </a>
+                   </font>
+                <p><font style="color: black; font-size: 16px;">Dublagem BR: Fernanda Bullara <img src="img/flags/brazil.png" width="22" height="15" class="thumbborder"><a href="img/personagens/asuka_d_br.png" data-toggle="lightbox">
+                        <i class="fas fa-image btnImg classA"></i>
+                    </a>
+                   </font></font></p>
+
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="col-md-4 col-12">
+      <div class="card" style="width: 18rem; background-color: rgba(153, 221, 255,0.9); margin-top: 20px; margin-bottom: 20px">
+        <img class="card-img-top rounded-circle" src="img/personagens/rei.png" alt="Ayanami Rei" style="height: 15rem; width: 18rem;">
+        <div class="card-body">
+          <ul class="nav nav-pills nav-fill mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active btn btnB" id="rei-descricao" data-toggle="tab" href="#rei-btn" aria-controls="rei-btn" role="tab" aria-selected="true">História</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btnB" id="rei-descricao2" data-toggle="tab" href="#rei-btn2" aria-controls="rei-btn2" role="tab" aria-selected="false">Info</a>
+            </li>
+          </ul>
+          <hr class="my-4">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="rei-btn" role="tabpanel" aria-labelledby="rei-descricao">
+              <p class="card-text">Ayanami Rei<i>(綾波 レイ)</i></p>
+               <p class="card-text">Rei é a piloto do Evangelion Unidade 00. No início da série, Rei é uma figura enigmática, cujo comportamento incomum confunde seus pares. Como a série progride, ela se torna mais envolvida com as pessoas ao seu redor, principalmente com seu colega e companheiro piloto de EVA Shinji Ikari. Ela é revelada por ser um fator-chave nos eventos que concluem o enredo. Seu papel nesta conclusão não é feito inteiramente clara na série de TV, mas é um dos principais pontos da trama de The End of Evangelion.
+               </p>
+            </div>
+            <div class="tab-pane fade" id="rei-btn2" role="tabpanel" aria-labelledby="rei-descricao2">
+              <i>
+              <p><font style="color: black; font-size: 16px;">Idade: 14 (aniversário desconhecido)</font></p>
+              <p><font style="color: black; font-size: 16px;">Rank / Título: Segunda criança</font></p>
+              <p><font style="color: black; font-size: 16px;">EVA: Unidade 00<a href="img/personagens/rei_eva.png" data-toggle="lightbox"><i class="fas fa-image btnImg classB"></i></a></font></p>
+              <p><font style="color: black; font-size: 16px;">Voz original: Megumi Hayashibara <img src="img/flags/japan.png" width="22" height="15" class="thumbborder"><a href="img/personagens/rei_d_or.png" data-toggle="lightbox"><i class="fas fa-image btnImg classB"></i></a></font></p>
+              <p><font style="color: black; font-size: 16px;">Dublagem BR: Priscila Concepción <img src="img/flags/brazil.png" width="22" height="15" class="thumbborder"><a href="img/personagens/rei_d_BR.png" data-toggle="lightbox"><i class="fas fa-image btnImg classB"></i></a></font></p></font></p>
+              </i>
+              <p><font style="color: black; font-size: 16px;"><i>Dublagem BR: Priscila Ferreira (You Can (Not) Advance)</i> <img src="img/flags/brazil.png" width="22" height="15" class="thumbborder"><a href="img/personagens/rei_d_BR2.png" data-toggle="lightbox"><i class="fas fa-image btnImg classB"></i></a></font></p></font></p>
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-12">
+      <div class="card" style="width: 18rem; background-color: rgba(255, 173, 153,0.9); margin-top: 20px; margin-bottom: 20px; ">
+        <img class="card-img-top rounded-circle" src="img/personagens/shinji.png" alt="Shinji Ikari">
+        <div class="card-body">
+          <ul class="nav nav-pills nav-fill mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active btn btnC" id="shinji-descricao" data-toggle="tab" href="#shinji-btn" aria-controls="shinji-btn" role="tab" aria-selected="true">História</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btnC" id="shinji-descricao2" data-toggle="tab" href="#shinji-btn2" aria-controls="shinji-btn2" role="tab" aria-selected="false">Info</a>
+              </li>
+          </ul>
+          <hr class="my-4">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="shinji-btn" role="tabpanel" aria-labelledby="shinji-descricao">
+              <p class="card-text">Shinji Ikari<i>(碇 シンジ)</i></p>
+               <p class="card-text">É junto com Rei e Asuka, protagonista da série (e de quase todas obras alternativas de Hideaki Anno). Ele é a Terceira Criança e o piloto da Unidade 01. Ele é filho de Gendo e Yue Ikari. Abandonado por seu pai quando era criança, Shinji cresceu "fechado" e sozinho, muitas vezes optando por fugir de situações difíceis e embaraçosas. Ao longo da série e com o incentivo de Misato, ele vai aprendendo a lutar contra seu lado covarde e franco, e a ter mais confiança em si mesmo.
+               </p>
+            </div>
+            <div class="tab-pane fade" id="shinji-btn2" role="tabpanel" aria-labelledby="shinji-descricao2">
+              <i>
+              <p><font style="color: black; font-size: 16px;">Idade: 14</font></p>
+              <p><font style="color: black; font-size: 16px;">Data de Nascimento:  06 de Junho de 2001</font></p>
+              <p><font style="color: black; font-size: 16px;">Rank / Título: Terceira criança</font></p>
+              <p><font style="color: black; font-size: 16px;">EVA: Unidade 01<a href="img/personagens/shinji_eva.png" data-toggle="lightbox"><i class="fas fa-image btnImg classC"></i></a></font></p>
+              <p><font style="color: black; font-size: 16px;">Voz original: Megumi Ogata <img src="img/flags/japan.png" width="22" height="15" class="thumbborder"><a href="img/personagens/shinji_d_or.png" data-toggle="lightbox"><i class="fas fa-image btnImg classC"></i></a></font></p>
+              <p><font style="color: black; font-size: 16px;">Dublagem BR: Fábio Lucindon <img src="img/flags/brazil.png" width="22" height="15" class="thumbborder"><a href="img/personagens/shinji_d_BR.png" data-toggle="lightbox"><i class="fas fa-image btnImg classC"></i></a></font></p>
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="d-flex justify-content-center" style="font-family: 'Slabo 27px', serif;">
+    <div class="row d-flex justify-content-center">     
+        <div class="col-md-4 col-12">
+          <div class="card" style="width: 18rem; background-color: rgba(255, 153, 204,0.9); margin-top: 20px; margin-bottom: 20px; ">
+            <img class="card-img-top rounded-circle" src="img/personagens/misato.png" alt="Misato Katsuragi">
+            <div class="card-body">
+              <ul class="nav nav-pills nav-fill mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active btn btnD" id="misato-descricao" data-toggle="tab" href="#misato-btn" aria-controls="misato-btn" role="tab" aria-selected="true">História</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btnD" id="misato-descricao2" data-toggle="tab" href="#misato-btn2" aria-controls="misato-btn2" role="tab" aria-selected="false">Info</a>
+                </li>
+              </ul>
+              <hr class="my-4">
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="misato-btn" role="tabpanel" aria-labelledby="misato-descricao">
+                  <p class="card-text">Misato Katsuragi<i>(葛城ミサト)</i></p>
+                   <p class="card-text">Ela é filha de um famoso cientista, que morreu durante o Segundo Impacto salvando-lhe a vida. Por causa disso, seu objetivo é exterminar todos os Anjos, pois ela os responsabiliza pelo Segundo Impacto e pela morte de seu pai. Além disso, ela também é o mais próximo que Shinji chega de ter uma família durante a série, uma vez que Gendo, pai do menino, o rejeita constantemente.
+                   </p>
+                </div>
+                <div class="tab-pane fade" id="misato-btn2" role="tabpanel" aria-labelledby="misato-descricao2">
+                  <i>
+                  <p><font style="color: black; font-size: 16px;">Idade: 29</font></p>
+                  <p><font style="color: black; font-size: 16px;">Data de Nascimento:  08 de Dezembro de 1986</font></p>
+                  <p><font style="color: black; font-size: 16px;">Rank / Título:  Capitã (eps 01~11), Major (eps 12+)</font></p>
+                  <p><font style="color: black; font-size: 16px;">Voz original: Kotono Mitsuishi <img src="img/flags/japan.png" width="22" height="15" class="thumbborder"><a href="img/personagens/misato_d_or.png" data-toggle="lightbox"><i class="fas fa-image btnImg classD"></i></a></font></p>
+                  <p><font style="color: black; font-size: 16px;">Dublagem BR: Vanessa Alves <img src="img/flags/brazil.png" width="22" height="15" class="thumbborder"><a href="img/personagens/misato_d_BR.png" data-toggle="lightbox"><i class="fas fa-image btnImg classD"></i></a></font></p>
+                  </i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="card" style="width: 18rem;background-color: rgba(255, 255, 153,0.9); margin-top: 20px; margin-bottom: 20px; ">
+            <img class="card-img-top rounded-circle" src="img/personagens/ritsuko.png" alt="Ritsuko Akagi">
+            <div class="card-body">
+              <ul class="nav nav-pills nav-fill mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active btn btnE" id="ritsuko-descricao" data-toggle="tab" href="#ritsuko-btn" aria-controls="ritsuko-btn" role="tab" aria-selected="true">História</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btnE" id="ritsuko-descricao2" data-toggle="tab" href="#ritsuko-btn2" aria-controls="ritsuko-btn2" role="tab" aria-selected="false">Info</a>
+                </li>
+              </ul>
+              <hr class="my-4">
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="ritsuko-btn" role="tabpanel" aria-labelledby="ritsuko-descricao">
+                  <p class="card-text">Ritsuko Akagi<i>(赤木 リツコ)</i></p>
+                   <p class="card-text">Ritsuko Akagi é a cientista-chefe da Nerv e está no comando do ramo técnico do QG da NERV, que é responsável pela pesquisa e desenvolvimento dos Evangelions, bem como a sua manutenção e reparação. Ela é filha da famosa cientista da Gehirn, Naoko Akagi, que liderou o projeto Evangelion antes dela. Ritsuko conheceu Misato Katsuragi na faculdade em Tokyo-2, bem como o namorado de Misato, Ryoji Kaji. Depois de se formar na faculdade, Ritsuko se juntou a Gehirn e trabalhou diretamente sob comando de sua mãe Naoko na então inacabada Tokyo-3.
+                   </p>
+                </div>
+                <div class="tab-pane fade" id="ritsuko-btn2" role="tabpanel" aria-labelledby="ritsuko-descricao2">
+                  <i>
+                  <p><font style="color: black; font-size: 16px;">Idade: 30</font></p>
+                  <p><font style="color: black; font-size: 16px;">Data de Nascimento:  21 de Novembro de 1985</font></p>
+                  <p><font style="color: black; font-size: 16px;">Rank / Título:  Chefe do "Projeto E"</font></p>
+                  <p><font style="color: black; font-size: 16px;">Voz original: Yuriko Yamaguchi <img src="img/flags/japan.png" width="22" height="15" class="thumbborder"><a href="img/personagens/ritsuko_d_or.png" data-toggle="lightbox"><i class="fas fa-image btnImg classE"></i></a></font></p>
+                  <p><font style="color: black; font-size: 16px;">Dublagem BR: Suzy Pereira <img src="img/flags/brazil.png" width="22" height="15" class="thumbborder"><a href="img/personagens/ritsuko_d_BR.png" data-toggle="lightbox"><i class="fas fa-image btnImg classE"></i></a></font></p>
+                  </i>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-4 col-12">
+        <div class="card" style="width: 18rem; background-color: rgba(255, 51, 0,0.9); margin-top: 20px; margin-bottom: 20px;">
+          <img class="card-img-top rounded-circle" src="img/personagens/gendo.png" alt="Gendo Ikari">
+          <div class="card-body">
+            <ul class="nav nav-pills nav-fill mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active btn btnF" id="gendo-descricao" data-toggle="tab" href="#gendo-btn" aria-controls="gendo-btn" role="tab" aria-selected="true">História</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btnF" id="gendo-descricao2" data-toggle="tab" href="#gendo-btn2" aria-controls="gendo-btn2" role="tab" aria-selected="false">Info</a>
+              </li>
+            </ul>
+            <hr class="my-4">
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="gendo-btn" role="tabpanel" aria-labelledby="gendo-descricao">
+                <p class="card-text">Gendo Ikari<i>(碇 ゲンドウ)</i></p>
+                 <p class="card-text">Gendo Ikari é o pai de Shinji Ikari e o Comandante da NERV. Ele desempenhou um papel importante na pesquisa e construção do Evangelions e do Projeto de Instrumental Humano. Gendo abandonou seu filho, Shinji, quando ele era criança, após a morte de sua mulher e mãe de seu filho.
+                 </p>
+              </div>
+              <div class="tab-pane fade" id="gendo-btn2" role="tabpanel" aria-labelledby="gendo-descricao2">
+                <i>
+                <p><font style="color: black; font-size: 16px;">Idade: 48</font></p>
+                <p><font style="color: black; font-size: 16px;">Data de Nascimento:  29 de Abril de 1967</font></p>
+                <p><font style="color: black; font-size: 16px;">Rank / Título:  Comandante</font></p>
+                <p><font style="color: black; font-size: 16px;">Voz original: Fumihiko Tachiki <img src="img/flags/japan.png" width="22" height="15" class="thumbborder"><a href="img/personagens/gendo_d_or.png" data-toggle="lightbox"><i class="fas fa-image btnImg classF"></i></a></font></p>
+                <p><font style="color: black; font-size: 16px;">Dublagem BR: Fábio Moura <img src="img/flags/brazil.png" width="22" height="15" class="thumbborder"><a href="img/personagens/gendo_d_BR.png" data-toggle="lightbox"><i class="fas fa-image btnImg classF"></i></a></font></p>
+                </i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+    <br><br><br><br> <!-- Espaço pra kct -->
+    <div class="accordion" id="accordionExample">
+      <div class="card" style="background-image: url(img/img2_2.png); background-repeat: no-repeat; background-position: bottom right; background-color: rgba(255,255,255,0.5);">
+        <div class="card-header" id="headingOne" style="background-color: rgba(255,0,0,0.4);">
+          <h5 class="mb-0">
+            <button class="btnAcc" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Wallpapers <i class="fas fa-images" style="color: red;"></i></i>
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body" style="text-align: left;">
+           <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+              <div class="row">
+                  <a href="img/wallpaper/img1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img1_.jpg" class="img-fluid border border-dark">
+                  </a>
+                  <a href="img/wallpaper/img2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img2_.jpg" class="img-fluid border border-dark">
+                  </a>
+                  <a href="img/wallpaper/img3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img3_.jpg" class="img-fluid border border-dark">
+                  </a>
+              </div>
+              <div class="row">
+                  <a href="img/wallpaper/img4.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img4_.jpg" class="img-fluid border border-dark">
+                  </a>
+                  <a href="img/wallpaper/img5.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img5_.jpg" class="img-fluid border border-dark">
+                  </a>
+                  <a href="img/wallpaper/img6.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img6_.jpg" class="img-fluid border border-dark">
+                  </a>
+              </div>
+              <div class="row">
+                  <a href="img/wallpaper/img7.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img7_.jpg" class="img-fluid border border-dark">
+                  </a>
+                  <a href="img/wallpaper/img8.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img8_.jpg" class="img-fluid border border-dark">
+                  </a>
+                  <a href="img/wallpaper/img9.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img9_.jpg" class="img-fluid border border-dark">
+                  </a>
+              </div>
+              <div class="row">
+                  <a href="img/wallpaper/img10.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img10_.jpg" class="img-fluid">
+                  </a>
+                  <a href="img/wallpaper/img11.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img11_.jpg" class="img-fluid">
+                  </a>
+                  <a href="img/wallpaper/img12.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img12_.jpg" class="img-fluid">
+                  </a>
+              </div>
+              <div class="row">
+                  <a href="img/wallpaper/img13.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img13_.jpg" class="img-fluid">
+                  </a>
+                  <a href="img/wallpaper/img14.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img14_.jpg" class="img-fluid">
+                  </a>
+                  <a href="img/wallpaper/img15.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                      <img src="img/wallpaper/img15_.jpg" class="img-fluid">
+                  </a>
+              </div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="background-image: url(img/img2_2.png); background-repeat: no-repeat; background-position: bottom right; background-color: rgba(255,255,255,0.5);">
+        <div class="card-header" id="headingTwo" style="background-color: rgba(255,0,0,0.4);">
+          <h5 class="mb-0">
+            <button class="btnAcc" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              Wallpapers em slide <i class="fas fa-images" style="color: red;"></i></i>
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body" style="text-align: left;">
+                <!-- Carousel -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+                  </ol>
+                  <div class="carousel-inner d-inline-block justify-content-center">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/wallpaper/img1.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/wallpaper/img2.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/wallpaper/img3.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/wallpaper/img4.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/wallpaper/img5.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/wallpaper/img6.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/wallpaper/img7.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/wallpaper/img8.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/wallpaper/img9.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/wallpaper/img10.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/wallpaper/img11.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/wallpaper/img12.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/wallpaper/img13.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/wallpaper/img14.jpg">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/wallpaper/img15.jpg">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                  </a>
+                </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+<!-- Fim da página -->  
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" integrity="sha256-jGAkJO3hvqIDc4nIY1sfh/FPbV+UK+1N+xJJg6zzr7A=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+</script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Evangelion</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+	<link href="https://fonts.googleapis.com/css?family=Mali|Playfair+Display|Slabo+27px" rel="stylesheet">
+	<script>
+	$('#myModal').on('shown.bs.modal', function () {
+ 	$('#myInput').trigger('focus')
+	})
+	</script>
+
+</head>
+<body>
+
+<!-- header de background da página -->
+
+<header class="header1">
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="vid/background.mp4" type="video/mp4">
+  </video>
+</header>
+<!-- Barra de navegação -->
+
+<!-- sticky bar de segestão com modal -->
+<nav class="navbar nav-sugestao justify-content-end sticky-top bg-transparent">
+	<div class="contato">
+	    <ul class="nav">
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">
+		    	 <div class="contato">
+				 	<button type="button" class="sugestao fas fa-exclamation" data-toggle="modal" data-target="#ModalSug" data-whatever="Igor" style="background: none; border: none"></button>
+				 </div> 
+			</a>
+		  </li>
+		</ul>
+	</div>
+</nav>
+
+<div class="modal fade" id="ModalSug" tabindex="-1" role="dialog" aria-labelledby="ModalSugLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalSugLabel">Você tem alguma sugestão? Deixe-me saber! :)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Mensagem:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Enviar Mensagem</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="fixed d-flex justify-content-center">
+	<a class=".d-sm-none .d-md-block" href="index.html">
+	    <img src="img/evangelion-logo.png" id="evangelion-logo">
+	</a>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light" id="MenuPrincipal">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MenuMobile" aria-controls="MenuMobile" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse .d-sm-none justify-content-center" id="MenuMobile" style="margin-bottom: 3%;">
+    <ul class="nav">
+	  <li class="nav-item">
+	    <a class="nav-link" href="index.html">
+	    	<div class="botao">
+ 				<img class="botao-img" src="img/btn1.png" />
+  					<div class="div-botao-descricao">
+    					<p class="botao-descricao"><i class="fas fa-home" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;"></i></p><font class="txt-descricao">home</font>
+  					</div>
+			</div>
+		</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="personagens.html">
+	    	<div class="botao">
+ 				<img class="botao-img2" src="img/btn2.png" />
+  					<div class="div-botao-descricao2">
+    					<p class="botao-descricao2"><i class="fas fa-id-card" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;"></i></p><font class="txt-descricao2">personagens</font>
+  					</div>
+			</div>
+		</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="sobre.html">
+	    	<div class="botao">
+ 				<img class="botao-img3" src="img/btn3.png" />
+  					<div class="div-botao-descricao3">
+    					<p class="botao-descricao3"><i class="fas fa-question" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;"></i></p><font class="txt-descricao2">sobre</font>
+  					</div>
+			</div>
+		</a>
+	  </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Fim Barra de navegação -->   
+<div id="background" class="body-border">
+	<div class="jumbotron" style="opacity: 0.8;">
+		<!-- Video dentro do Jumbotron -->
+	      <header class="header2 rounded">
+	        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop>
+	          <source src="vid/jumbo.mp4" type="video/mp4">
+	        </video>
+	        <div class="container h-100">
+	          <div class="d-flex text-center h-100">
+	            <div class="my-auto w-100 overlay-desc">
+	              <font class="descricao" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000; color: rgb(242, 242, 242);">
+	                Bem-vindo(a)!
+	              </font>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="container h-100">
+	          <div class="d-flex text-center h-100">
+	            <div class="my-auto w-100 text-white overlay-desc2">
+	              <a href="https://www.youtube.com/watch?v=aht9ZSwpMCk" target="_blank" style="color: rgb(204, 238, 255);"><i class="fab fa-youtube descricao2"></i></a>
+	            </div>
+	          </div>
+	        </div>
+	      </header>
+		<!-- Video dentro do Jumbotron -->
+	  	<hr class="my-4">
+	  	<div class="card">
+  			<div class="card-header">
+    		<i>The end of Evangelion</i>
+  			</div>
+  			<div class="card-body">
+    			<blockquote class="blockquote mb-0" style="font-family: 'Slabo 27px', serif;">
+      				<p><i class="fas fa-quote-left"></i> Penso, logo existo. Ou penso, pois existo? O que existe, nós ou nossos pensamentos? Talvez nós não estejamos aqui, apenas nossas mentes criando um mundo irreal para o nosso entretenimento, talvez eu seja fruto de sua imaginação, ou talvez você e eu sejamos um fruto da imaginação alheia. Nos questionamos o tempo todo sobre diversas coisas, mas raramente paramos para pensar por que estamos aqui e por que vivemos e sofremos... Devemos nos perguntar? Não sei, mas mesmo assim eu pergunto, mesmo sem obter as respostas. Eu pergunto, e mesmo sem saber o porquê das perguntas, me pergunto, por que? Eu não sei, não sei... <i class="fas fa-quote-right"></i></p>
+      				<footer class="blockquote-footer"><cite title="Source Title">Ayanami Rei</cite> <button type="button" class="btnInfo btn-secondary" data-toggle="modal" data-target="#Modal-info"><i class="fas fa-info"></i></button></footer>
+    			</blockquote>
+  			</div>
+		</div>
+    </div>
+<!-- Modal da Info-->
+<div class="modal fade" id="Modal-info" tabindex="-1" role="dialog" aria-labelledby="Mobodal-infoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Modal-infoLabel" style="font-family: 'Playfair Display', serif;">Ayanami Rei</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="font-family: 'Playfair Display', serif; font-size: 22px; text-shadow: 2px 2px 2px black, 0px -2px 2px black;">
+        <header class="header3 rounded">
+			  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop>
+			    <source src="vid/infobg.mp4" type="video/mp4">
+			  </video>
+			  <div class="container h-100">
+			    <div class="d-flex text-center h-100">
+			      <div class="my-auto w-100 text-white">
+			        <div class="modal-body">
+        				<p>Uma das personagens principais...</p>
+        				<p>Visite a página de personagens para saber mais!</p>
+      				</div>
+			      </div>
+			    </div>
+			  </div>
+		</header>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <br>
+
+    <div class="accordion" id="accordionExample">
+	  <div class="card" style="background-image: url(img/img2.png); background-repeat: no-repeat; background-position: bottom right; background-color: rgba(255,255,255,0.5);">
+	    <div class="card-header" id="headingOne" style="background-color: rgba(255,255,255,0.9);">
+	      <h5 class="mb-0">
+	        <button class="btnAcc" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	          A História antes da Animação <i class="fas fa-scroll"></i>
+	        </button>
+	      </h5>
+	    </div>
+	    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+	      <div class="card-body" style="text-align: left;">
+	      	<p>Neon Genesis Evangelion (新世紀エヴァンゲリオン, Shin Seiki Evangelion, "Gospel of a New Beginning" ou, em português, "O Evangelho de um Novo Começo") (também conhecida e referida apenas como Evangelion) é a comercial e criticamente bem-sucedida série de anime e mangá de propriedade dos estúdios Gainax. A série foi adaptada do mangá e exibida durante o período de 04 de outubro de 1995 a 27 de março de 1996, enquanto seu mangá deu origem ao anime, começou a ser lançado em 1994 e suas publicações cessaram apenas em novembro de 2014. Evangelion ganhou 4 adaptações, 2 filmes e milhares de fãs após o sucesso tremendo do mangá e consequentemente da animação no Japão e no mundo, além de referências que você pode encontrar em filmes e séries...
+	      	</p>
+	      	<div class="d-flex justify-content-center">
+	      		<div class="card-deck">
+				  <div class="card card-1">
+				    <img class="card-img-top" src="img/manga1.png">
+				    <div class="card-body">
+				      <p class="card-text"><small class="text-muted">Primeiro mangá lançado em 1994</small></p>
+				    </div>
+				  </div>
+				  <div class="card card-2">
+				    <img class="card-img-top" src="img/manga2.png">
+				    <div class="card-body">
+				      <p class="card-text"><small class="text-muted">20º Volume do mangá/small</p></small>
+				    </div>
+				  </div>
+				  <div class="card card-3">
+				    <img class="card-img-top" src="img/evangelion3.png" alt="Card image cap">
+				    <div class="card-body">
+				      <p class="card-text"><small class="text-muted">Rebuild de Evangelion, Evangelion 3.0</p></small>
+				    </div>
+				  </div>
+				</div>
+	      	</div><br>
+	        <p>Evangelion foi escrito e dirigido por Hideaki Anno, com design de personagens de Yoshiyuki Sadamoto e design mecânico por Anno e Ikuto Yamashita. Anno caiu em uma profunda depressão após a conclusão do seu trabalho em Nadia: The Secret of Blue Water. De acordo com Yasuhiro Takeda, Anno concordou em uma colaboração entre a King Records e Gainax enquanto bebia com um representante da King.A King Records garantiu a Anno um tempo para pensar em “alguma coisa, qualquer coisa.” Anno iniciou o desenvolvimento da nova série, em 1993, em torno da noção de “não fugir”. Na fase inicial do projeto Evangelion vários formatos foram consideradas; incluindo um filme, uma série de televisão e uma série OVA. Os produtores finalmente optaram pela série de televisão como era a mídia mais acessível ao grande público no Japão na época.</p>
+	        <p>Evangelion sofre de uma diminuição gradual perceptível na qualidade de animação. Conforme a produção da série progredia, o orçamento de longo prazo desaparecia mais e mais, causando uma série de truques de animação a ser implementadas a fim de cortar custos. Estes incluíram: cenas recicladas, cenas de longa distância, bocas dos personagens tampadas com pranchetas enquanto falavam e cenas estáticas de 1 minuto.</p>
+	        <p>O desenvolvimento da série Neon Genesis Evangelion ficou perto de prazos ao longo do seu percurso de produção. Os cortes iniciais dos dois primeiros episódios foram exibidos no segundo festival da Gainax em julho de 1995, apenas três meses antes que eles fossem ao ar na televisão. A partir do episódio 13, a série começou a desviar-se significativamente da partir história original, e o script inicial foi abandonado. O número dos Anjos foi reduzido para 17 em vez da uma planejamento original de 28, os roteiristas mudaram o final da história, que tinha inicialmente descrito como o fracasso do Projeto de Instrumentalidade Humana após o ataque de um anjo da lua. Iniciando com o episódio 16, o anime mudou drasticamente, com foco nos personagens e descartando a grande narrativa sobre a salvação para uma narrativa com foco nos personagens individuais. Esta mudança coincidiu com o desenvolvimento de Anno de um interesse em psicologia depois que um amigo emprestou-lhe um livro sobre doenças mentais. Este foco culminou em uma psicanálise dos personagens nos dois últimos episódios. A produção correu tão perto da data limite que as cenas concluídas utilizadas na pré-estréia do 25º episódio tiveram de ser redesenhadas para o novo final. Esses episódios apresentam uso pesado de animação abstrata, flashbacks, desenhos de linhas simples, fotografias e cenas imagens fixas com diálogo voice-over (voz por cima). Alguns críticos especulam que essas escolhas não convencionais de animação resultaram de cortes no orçamento, mas Toshio Okada afirmou que eles eram o resultado do final ter sido decidido apenas três meses antes de ir ao ar.</p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="card" style="background-image: url(img/img4.png); background-repeat: no-repeat; background-position: bottom right; background-color: rgba(255,255,255,0.5);">
+	    <div class="card-header" id="headingTwo" style="background-color: rgba(255,255,255,0.9);">
+	      <h5 class="mb-0">
+	        <button class="btnAcc collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+	          Breve introdução <i class="fas fa-journal-whills"></i>
+	        </button>
+	      </h5>
+	    </div>
+	    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+	      <div class="card-body">
+	      	<div class="card bg-dark text-white">
+  				<img class="card-img rounded" src="img/banner.png">
+  					<div class="card-img-overlay">
+    					<h5 class="card-title" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000; color: rgb(242, 242, 242)">Neon Genesis Evangelion</h5>
+    					<p class="card-text" style="text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000; color: rgb(242, 242, 242);">Da depressão a dos animes mais importantes de sua época</p>
+  					</div>
+			</div>
+	        A maior parte da franquia aborda uma história de ação apocalíptica que se passa no ano de 2015 d.C., quinze anos após o catastrófico evento conhecido como Segundo Impacto, supostamente causada pela queda de um meteorito, que eliminou metade da população da Terra e tirou o planeta de seu eixo. Assim que a humanidade terminou sua recuperação do desastre, Tokyo-3 começou a sofrer ataques por parte de estranhos monstros conhecidos apenas como "Anjos". Para combater esses seres misteriosos e hostis, a principal arma da organização paramilitar conhecida como Nerv são os gigantes humanoides chamados Evangelions, que são pilotados por adolescentes selecionados, um dos quais, Shinji Ikari, é o protagonista principal. Embora a série começe como um anime de mecha regular, o foco tende a se deslocar da ação para a flashbacks e análises dos personagens principais, especialmente do personagem Shinji. A franquia começou com o anime de mesmo nome dirigido por Hideaki Anno. Desde então, já arrecadou mais de ¥ 150.000.000.000 desde sua estréia na série de televisão, sendo uma das primeiras animações japonesas a inserir o tema "mecha" e engatinhar os primeiros passos para uma industria que hoje é enorme, que é industria dos animes ou desenhos japoneses.
+	      </div>
+	    </div>
+	  </div>
+	  <div class="card" style="background-image: url(img/img3.png); background-repeat: no-repeat; background-position: bottom right; background-color: rgba(255,255,255,0.5); background-size: 35% 70%">
+	    <div class="card-header" id="headingThree" style="background-color: rgba(255,255,255,0.9);">
+	      <h5 class="mb-0">
+	        <button class="btnAcc collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+	          Conheça o local! <i class="fas fa-map-marker-alt"></i>
+	        </button>
+	      </h5>
+	    </div>
+	    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+	      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207432.99597091912!2d139.57030312866488!3d35.673540790414144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2zVMOzcXVpbywgSmFww6Nv!5e0!3m2!1spt-BR!2sbr!4v1540592946302" width="400" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	    </div>
+	  </div>
+	</div>
+
+<!-- Fim da página -->  
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/css/tether.min.css" />
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
