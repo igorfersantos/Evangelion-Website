@@ -13,6 +13,6 @@ os meus conhecimentos já adquiridos.
 
 > https://github.com/igorfersan/Evangelion-Website-v2
 
-OBS: Este projeto está parado, porém irei re-fazelo em algum ponto desse primeiro trimestre de 2021 utilizando a stack de React.JS (Ainda preciso me aprofundar mais em JS e TS no geral) com back-end em Spring ou Micronaut(Java/Kotlin) além de algumas outras coisas como Travis CI, Dockerização e Deploy na AWS/Heroku
+OBS: Este projeto está parado, porém irei recriar em algum ponto desse primeiro trimestre de 2021 utilizando a stack de React.JS (Ainda preciso me aprofundar mais em JS e TS no geral) com back-end em Spring ou Micronaut(Java/Kotlin) além de algumas outras coisas como Travis CI, Dockerização e Deploy na AWS/Heroku
 
 Fique ligado! :)
